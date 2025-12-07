@@ -8,7 +8,6 @@ struct Caixa {
 
 int contem (struct Caixa* lista, int valor){
   struct Caixa* atual= lista;
-
   while(atual != NULL){
     if(atual->valor != valor){
     return 0;
