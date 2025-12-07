@@ -12,7 +12,7 @@ struct Caixa* insere (struct Caixa* lista, int valor){
         return novo; //nova cabeca
     }
     
-    //inserio no meio ou final
+    //inserir no meio ou no final
     struct Caixa* atual= lista;
     while(atual->prox!=NULL && atual->prox->valor < valor){
         atual= atual->prox;
