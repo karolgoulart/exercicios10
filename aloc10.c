@@ -8,7 +8,7 @@ struct Caixa {
 
 int retira (struct Caixa* caixa, int valor){
     if (caixa != NULL){
-        return NULL;
+        return 0;
     }
     struct Caixa* atual= caixa;
     struct Caixa* anterior= NULL;
@@ -17,11 +17,11 @@ int retira (struct Caixa* caixa, int valor){
         atual= atual->prox;
     }
     if (atual==NULL){
-        return NULL;
+        return 0;
     }
     anterior->prox= atual->prox;
     free(atual);
     
-    return caixa;
+    return 1;
     
 }
